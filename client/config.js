@@ -3,6 +3,7 @@ $.cloudinary.config({
     api_key: '243461195879357'
 });
 
+
 [core]
         repositoryformatversion = 0
         filemode = true

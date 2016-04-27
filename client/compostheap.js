@@ -12,7 +12,6 @@ if (Meteor.isClient) {
       console.log("ok");
     },
     
-    // ASAD: YOU NEED THIS TOO
     
     draggable: function(id) {
       Meteor.defer(function() {
@@ -56,11 +55,10 @@ if (Meteor.isClient) {
         console.log(err);
         console.log("Upload Result:");
         console.log(image);
-        image.user = Meteor.user();
+        // image.user = Meteor.user();
+        // Removing user for now
         image.zindexcount = 1;
         console.log(image.zindexcount);
-        
-        // ASAD: THIS IS WHAT YOU NEED IN THE DB
         
         image.position = {
           top: parseInt(Math.random() * 500),
